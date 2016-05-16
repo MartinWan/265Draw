@@ -1,0 +1,73 @@
+\documentclass{article}
+\title{265Draw Users Manual}
+\date{}
+\author{
+  Dinnen, Ethan\\
+  \texttt{V00776541}
+  \and
+  Goyal, Rai\\
+  \texttt{V00839377}
+  \and
+  Nesdoly, Andrea\\
+  \texttt{V00767633}
+  \and
+  Wan, Martin\\
+  \texttt{V00816601}
+}
+\usepackage{titling}
+\usepackage{fullpage}
+
+\setlength{\droptitle}{-7em}
+
+\begin{document}
+  \maketitle
+  \section*{265Draw Framework Contents}
+  The 265Draw Framework consists of three generators:
+  \begin{itemize}
+    \item \texttt{generate\_koch\_snowflake.py}
+    \item \texttt{generate\_box\_fractal.py}
+    \item \texttt{generate\_polygon.py}
+  \end{itemize}
+  One filter:
+  \begin{itemize}
+    \item \texttt{rotate\_scale\_translate.py}
+  \end{itemize}
+  Four bash scripts:
+  \begin{itemize}
+    \item \texttt{koch\_snowflake\_simple.sh}
+    \item \texttt{koch\_snowflake\_tiling.sh}
+    \item \texttt{box\_fractal.sh}
+    \item \texttt{three\_rings.sh}
+  \end{itemize}
+  \section*{Fractal Generation with Bash}
+    \subsection*{Koch Snowflake}
+      \subsubsection*{Simple}
+        To generate a simple Koch snowflake two arguments are required: the order (ranging from 0 to 5) and the size (ranging from 0 to 250). The syntax for running the generation script is as follows:
+        \begin{center}
+          \texttt{bash koch\_snowflake\_simple.sh order size}
+        \end{center}
+        The size value specifies how much of the canvas is used by the fractal drawing. The order value determines how many iterations are completed and thereby determines how many triangles are recursively added to each side. Assuming the order value is represented with the variable $n$, the number of sides of the snowflake is given by:
+      \begin{center}
+        $S_n = S_{n-1}\cdot 4 = 3\cdot 4^n$
+      \end{center}
+    \subsubsection*{Tiling}
+      To generate a tiled Koch snowflate two arguments are required: the tiling (ranging from 1 to 3) and the order (ranging from 0 to 5). The syntax for running the generation script is as follows:
+      \begin{center}
+        \texttt{bash koch\_snowflake\_tiling.sh tiling order}
+      \end{center}
+      The tiling value changes the type of tiling applied to the snowflake where the values 1-3 are different tiling styles. The order and number of sides are defined the same as the simple snowflake.
+    \subsection*{Box Fractal}
+      To generate a box fractal two arguments are required: the order (ranging from 0 to 8) and the size (ranging from 1 to 750). The syntax for running the generation script is as follows:
+      \begin{center}
+        \texttt{bash box\_fractal.sh order size}
+      \end{center}
+      The size value specifies how much of the canvas is used by the fractal drawing. The order value determines how many iterations are completed and thereby determines how many groups of five boxes are drawn. Assuming the order value is represented with the variable $n$, the number of boxes is given by:
+      \begin{center}
+        $B_n = 5^n$
+      \end{center}
+    \subsection*{Three Rings}
+      To generate a three ring fractal one argument is required: the number of sides ($n$) (ranging from 2 to $\infty$). This script results in three rings of increasing size centered around the origin with each ring consisting of 16 polygons with $n$ sides each rotated around the origin. The syntax for running the generation script is as follows:
+      \begin{center}
+        \texttt{bash three\_rings.sh number\_of\_sides}
+      \end{center}
+\end{document}
