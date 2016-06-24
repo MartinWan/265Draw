@@ -60,7 +60,7 @@ To generate a three ring fractal one argument is required: the number of sides (
     bash three rings.sh number of sides
 
 For more information:
-* [265 Draw User Manual](/MANUAL/265DrawUserManual.pdf)
+* [265Draw User Manual](/MANUAL/265DrawUserManual.pdf)
 * [Fractal's and Mathematics](https://en.wikipedia.org/wiki/Fractal)
 
 
