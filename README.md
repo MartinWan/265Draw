@@ -17,9 +17,9 @@ Implemented in Python.
 
 ## Use 
 
-![Use](/Manual/manualScreenshot1.pdf)
+![Use](/Manual/manualScreenshot1.png)
 
-![Use](/Manual/manualScreenshot2.pdf)
+![Use](/Manual/manualScreenshot2.png)
 
 
 
