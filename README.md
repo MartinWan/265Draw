@@ -5,8 +5,8 @@ Final group project for SENG 265 - Software Development Methods
 Excellent Team members:
 * Martin Wan
 * Ethan Dinnen
-* Goyal Rai
-* Nesdoly Andrea
+* Rai Goyal 
+* Andrea Nesdoly 
 
 A simple framework for creating fractal graphics in SVG through the command line. 
 Implemented in Python. Recieved perfect final grade.
