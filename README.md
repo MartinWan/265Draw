@@ -7,17 +7,17 @@ Implemented in Python.
 
 ## Screenshots 
 
-![Screenshots](/Manual/BoxFractal.png)
+![Screenshots](/MANUAL/BoxFractal.png)
 
-![Screenshots](/Manual/KochSnowflakeSimple.png)
+![Screenshots](/MANUAL/KochSnowflakeSimple.png)
 
-![Screenshots](/Manual/KochSnowflakeTiling.png)
+![Screenshots](/MANUAL/KochSnowflakeTiling.png)
 
-![Screenshots](/Manual/ThreeRings.png)
+![Screenshots](/MANUAL/ThreeRings.png)
 
 ## Use 
 
-![Use](/Manual/265DrawUserManual.png)
+![Use](/MANUAL/265DrawUserManual.png)
 
 
 
